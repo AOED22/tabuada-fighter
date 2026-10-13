@@ -1,0 +1,208 @@
+[gd_scene load_steps=6 format=3]
+
+[ext_resource type="Script" path="res://scripts/calculadora.gd" id="1_calc"]
+
+[sub_resource type="StyleBoxFlat" id="Estilo_visor"]
+bg_color = Color(0.05, 0.05, 0.07, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+
+[sub_resource type="StyleBoxFlat" id="Estilo_tecla"]
+bg_color = Color(0.16, 0.16, 0.2, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.5, 0.5, 0.55, 1)
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+
+[sub_resource type="Animation" id="Anim_errou"]
+resource_name = "errou"
+length = 0.4
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Visor:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.4),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 0.3, 0.3, 1), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="Lib_calc"]
+_data = {
+"errou": SubResource("Anim_errou")
+}
+
+[node name="Calculadora" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 230.0
+offset_bottom = 304.0
+script = ExtResource("1_calc")
+
+[node name="Visor" type="Panel" parent="."]
+layout_mode = 0
+offset_right = 230.0
+offset_bottom = 54.0
+theme_override_styles/panel = SubResource("Estilo_visor")
+
+[node name="Texto" type="Label" parent="Visor"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 10.0
+offset_right = -10.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 30
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="Teclas" type="GridContainer" parent="."]
+layout_mode = 0
+offset_top = 64.0
+offset_right = 230.0
+offset_bottom = 304.0
+theme_override_constants/h_separation = 8
+theme_override_constants/v_separation = 8
+columns = 3
+
+[node name="Tecla1" type="Button" parent="Teclas"]
+custom_minimum_size = Vector2(68, 54)
+layout_mode = 2
+size_flags_horizontal = 3
+focus_mode = 0
+mouse_filter = 2
+theme_override_font_sizes/font_size = 22
+theme_override_styles/normal = SubResource("Estilo_tecla")
+text = "1"
+
+[node name="Tecla2" type="Button" parent="Teclas"]
+custom_minimum_size = Vector2(68, 54)
+layout_mode = 2
+size_flags_horizontal = 3
+focus_mode = 0
+mouse_filter = 2
+theme_override_font_sizes/font_size = 22
+theme_override_styles/normal = SubResource("Estilo_tecla")
+text = "2"
+
+[node name="Tecla3" type="Button" parent="Teclas"]
+custom_minimum_size = Vector2(68, 54)
+layout_mode = 2
+size_flags_horizontal = 3
+focus_mode = 0
+mouse_filter = 2
+theme_override_font_sizes/font_size = 22
+theme_override_styles/normal = SubResource("Estilo_tecla")
+text = "3"
+
+[node name="Tecla4" type="Button" parent="Teclas"]
+custom_minimum_size = Vector2(68, 54)
+layout_mode = 2
+size_flags_horizontal = 3
+focus_mode = 0
+mouse_filter = 2
+theme_override_font_sizes/font_size = 22
+theme_override_styles/normal = SubResource("Estilo_tecla")
+text = "4"
+
+[node name="Tecla5" type="Button" parent="Teclas"]
+custom_minimum_size = Vector2(68, 54)
+layout_mode = 2
+size_flags_horizontal = 3
+focus_mode = 0
+mouse_filter = 2
+theme_override_font_sizes/font_size = 22
+theme_override_styles/normal = SubResource("Estilo_tecla")
+text = "5"
+
+[node name="Tecla6" type="Button" parent="Teclas"]
+custom_minimum_size = Vector2(68, 54)
+layout_mode = 2
+size_flags_horizontal = 3
+focus_mode = 0
+mouse_filter = 2
+theme_override_font_sizes/font_size = 22
+theme_override_styles/normal = SubResource("Estilo_tecla")
+text = "6"
+
+[node name="Tecla7" type="Button" parent="Teclas"]
+custom_minimum_size = Vector2(68, 54)
+layout_mode = 2
+size_flags_horizontal = 3
+focus_mode = 0
+mouse_filter = 2
+theme_override_font_sizes/font_size = 22
+theme_override_styles/normal = SubResource("Estilo_tecla")
+text = "7"
+
+[node name="Tecla8" type="Button" parent="Teclas"]
+custom_minimum_size = Vector2(68, 54)
+layout_mode = 2
+size_flags_horizontal = 3
+focus_mode = 0
+mouse_filter = 2
+theme_override_font_sizes/font_size = 22
+theme_override_styles/normal = SubResource("Estilo_tecla")
+text = "8"
+
+[node name="Tecla9" type="Button" parent="Teclas"]
+custom_minimum_size = Vector2(68, 54)
+layout_mode = 2
+size_flags_horizontal = 3
+focus_mode = 0
+mouse_filter = 2
+theme_override_font_sizes/font_size = 22
+theme_override_styles/normal = SubResource("Estilo_tecla")
+text = "9"
+
+[node name="TeclaDel" type="Button" parent="Teclas"]
+custom_minimum_size = Vector2(68, 54)
+layout_mode = 2
+size_flags_horizontal = 3
+focus_mode = 0
+mouse_filter = 2
+theme_override_font_sizes/font_size = 22
+theme_override_styles/normal = SubResource("Estilo_tecla")
+text = "DEL"
+
+[node name="Tecla0" type="Button" parent="Teclas"]
+custom_minimum_size = Vector2(68, 54)
+layout_mode = 2
+size_flags_horizontal = 3
+focus_mode = 0
+mouse_filter = 2
+theme_override_font_sizes/font_size = 22
+theme_override_styles/normal = SubResource("Estilo_tecla")
+text = "0"
+
+[node name="TeclaOk" type="Button" parent="Teclas"]
+custom_minimum_size = Vector2(68, 54)
+layout_mode = 2
+size_flags_horizontal = 3
+focus_mode = 0
+mouse_filter = 2
+theme_override_font_sizes/font_size = 22
+theme_override_styles/normal = SubResource("Estilo_tecla")
+text = "OK"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("Lib_calc")
+}

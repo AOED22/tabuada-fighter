@@ -1,0 +1,12 @@
+[gd_scene format=3]
+
+[node name="Lutador" type="Node2D"]
+
+[node name="Visual" type="Node2D" parent="."]
+
+[node name="PlaceholderCorpo" type="ColorRect" parent="Visual"]
+offset_left = -75.0
+offset_top = -300.0
+offset_right = 75.0
+offset_bottom = 0.0
+color = Color(1, 1, 1, 1)
