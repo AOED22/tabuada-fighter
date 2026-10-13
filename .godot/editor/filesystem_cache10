@@ -1,0 +1,13 @@
+78098b89c88a74ebe8c20117b8754620
+::res://::1791928945
+::res://artes/::1791928945
+::res://artes/placeholders/::1791929027
+goat_do_mal.jpg::CompressedTexture2D::8986737003903168975::1791928925::1791928945::1::::<><><>0<>0<>725b1b46316ab6d6137821b6d210a3e9<>res://.godot/imported/goat_do_mal.jpg-d28e61468e98f7aa583510b020b3a590.ctex::
+italo.jpg::CompressedTexture2D::8540533768279744304::1791929027::1791929028::1::::<><><>0<>0<>60791952d251d658e5623c3eaa689358<>res://.godot/imported/italo.jpg-9d24ef222320a64676c125ef182cb080.ctex::
+::res://cenas/::1791928987
+calculadora.tscn::PackedScene::-1::1791739192::0::1::::<><><>0<>0<><>::res://scripts/calculadora.gd
+lutador.tscn::PackedScene::3903668987152414218::1791928987::0::1::::<><><>0<>0<><>::
+main.tscn::PackedScene::1342901679056224084::1791928936::0::1::::<><><>0<>0<><>::uid://dynaq2eiou06p::::res://scripts/main.gd<>res://cenas/calculadora.tscn<>res://cenas/lutador.tscn
+::res://scripts/::1791928832
+calculadora.gd::GDScript::1503212271036626599::1791739884::0::1::::<>Control<><>0<>0<><>::
+main.gd::GDScript::8870661206590015505::1791739884::0::1::::<>Control<><>0<>0<><>::

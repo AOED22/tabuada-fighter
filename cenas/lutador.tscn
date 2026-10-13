@@ -1,12 +1,7 @@
-[gd_scene format=3]
+[gd_scene format=3 uid="uid://bvu74fyk54ye1"]
 
-[node name="Lutador" type="Node2D"]
+[node name="Lutador" type="Node2D" unique_id=914678700]
 
-[node name="Visual" type="Node2D" parent="."]
+[node name="Visual" type="Node2D" parent="." unique_id=2041273094]
 
-[node name="PlaceholderCorpo" type="ColorRect" parent="Visual"]
-offset_left = -75.0
-offset_top = -300.0
-offset_right = 75.0
-offset_bottom = 0.0
-color = Color(1, 1, 1, 1)
+[node name="PlaceholderCorpo" type="Sprite2D" parent="Visual" unique_id=661952632]
